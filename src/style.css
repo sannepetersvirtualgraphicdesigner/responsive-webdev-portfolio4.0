@@ -1,10 +1,43 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Montserrat", sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
+}
 body {
   background-color: white;
+  font-family: var(--body-font-family);
+}
+h1,
+h2,
+h3 {
+  color: #333333;
 }
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 600;
+  font-size: 36px;
 }
-p {
-  font-family: "Open Sans", sans-serif;
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  line-height: 1.2em;
+}
+.hero p {
+  font-family: var(--body-font-family);
+  margin: 0;
+  color: #878787;
+}
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
